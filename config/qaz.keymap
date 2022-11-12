@@ -116,7 +116,7 @@
             bindings = <
              &kp Q         &kp W         &kp F        &kp P            &kp B   &kp J         &kp L         &kp U                    &kp Y  &kp SEMICOLON
              &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T            &kp G   &kp M   &gqt RALT N  &gqt RCTRL E              &gqt RGUI I          &kp O
- &gqt LEFT_SHIFT Z         &kp X         &kp C        &kp D            &kp V   &kp K         &kp H     &kp COMMA  &gqt RIGHT_SHIFT PERIOD
+ &gqt LEFT_SHIFT X         &kp C         &kp D        &kp V            &kp Z   &kp K         &kp H     &kp COMMA  &gqt RIGHT_SHIFT PERIOD
   &kp LEFT_CONTROL  &kp LEFT_WIN         &none  &lt 2 SPACE  &lt 1 BACKSPACE   &none  &kp LEFT_ALT      &kp FSLH
             >;
         };
