@@ -10,7 +10,19 @@
 
 #define BASE 0
 #define THINGS 1
-#define HMM 2
+#define HMM
+#define undo LC(Z)
+#define redo LC(LS(Z))
+#define prev_screen LC(LG(LEFT))
+#define next_screen LC(LG(RIGHT))
+#define meh LC(LS(LALT))
+#define prev_win LA(TAB)
+#define next_win LA(LS(TAB))
+
+&mt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
+};
 
 / {
     combos {
