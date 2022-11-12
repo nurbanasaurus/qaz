@@ -13,8 +13,8 @@
 #define HMM 2
 
 &kscan0 {
-    debounce-press-ms = <3>;
-    debounce-release-ms = <3>;
+    debounce-press-ms = <6>;
+    debounce-release-ms = <6>;
 };
 
 / {
