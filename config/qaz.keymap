@@ -10,7 +10,7 @@
 
 #define BASE 0
 #define THINGS 1
-#define HMM
+#define HMM 2
 
 &kscan0 {
     debounce-press-ms = <3>;
