@@ -39,8 +39,8 @@
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
             global-quick-tap;
             bindings =
                 <&kp>,
@@ -51,11 +51,60 @@
             label = "BALANCED-HOLD-TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
             bindings =
                 <&kp>,
                 <&kp>;
+        };
+        osm: one_shot_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ONE_SHOT_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;// <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings =
+                <&sk>,
+                <&kp>;
+        };
+        
+        // TAP DANCES
+        bslhpipe: tap_dance_backslash_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_BACKSLASH_PIPE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp BSLH>,
+                <&kp PIPE>;
+        };
+        grvtilde: tap_dance_grave_tilde {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_GRAVE_TILDE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp GRAVE>,
+                <&kp TILDE>;
+        };
+        apoquote: tap_dance_apostrophe_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_APOSTROPE_QUOTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp SQT>,
+                <&kp DQT>;
+        };
+        close: tap_dance_close {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CLOSE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+                <&kp LC(F4)>,
+                <&kp LA(F4)>;
         };
     };
     
