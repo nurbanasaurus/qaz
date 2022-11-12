@@ -128,8 +128,8 @@
 
         BASE {
             bindings = <
-      &kp Q         &kp W         &kp F        &kp P   &kp B                         &kp J         &kp L         &kp U         &kp Y  &kp SEMICOLON
-      &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G                         &kp M   &gqt RALT N  &gqt RCTRL E   &gqt RGUI I          &kp O
+      &kp Q         &kp W         &kp F        &kp P   &kp B                         &kp J         &kp L         &kp U         &kp Y  &clnsemi
+      &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G                         &kp M   &gqt RALT N  &gqt RCTRL E   &gqt RGUI I     &kp O
     &lt 1 X         &kp C         &kp D        &kp V   &kp Z                         &kp K         &kp H     &kp COMMA  &lt 2 PERIOD
  &kp ESCAPE  &kp LEFT_WIN       &kp TAB  &lt 2 SPACE   &mo 1  &osm RIGHT_SHIFT RIGHT_SHIFT  &kp LEFT_ALT      &kp FSLH
             >;
