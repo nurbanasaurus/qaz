@@ -20,14 +20,14 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&gresc>;
-            layers = <>;
+            layers = <0>;
         };
 
         combo_backspace {
             timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp BACKSPACE>;
-            layers = <>;
+            layers = <0>;
         };
     };
 };
@@ -68,8 +68,9 @@
                 <&sk>,
                 <&kp>;
         };
-        
+
         // TAP DANCES
+
         bslhpipe: tap_dance_backslash_pipe {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BACKSLASH_PIPE";
@@ -107,16 +108,16 @@
                 <&kp LA(F4)>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-            &kp Q         &kp W   &kp F      &kp P            &kp B   &kp J         &kp L      &kp U           &kp Y  &kp SEMICOLON
-            &kp A         &kp R   &kp S      &kp T            &kp G   &kp M         &kp N      &kp E           &kp I          &kp O
-     &mt RSHIFT Z         &kp X   &kp C      &kp D            &kp V   &kp K         &kp H  &kp COMMA  &mt LSHIFT DOT
- &kp LEFT_CONTROL  &kp LEFT_WIN   &none  &kp SPACE  &lt 1 BACKSPACE   &none  &kp LEFT_ALT   &kp FSLH
+             &kp Q         &kp W         &kp F        &kp P          &kp B   &kp J         &kp L         &kp U                    &kp Y  &kp SEMICOLON
+             &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T          &kp G   &kp M   &gqt RALT N  &gqt RCTRL E              &gqt RGUI I          &kp O
+ &gqt LEFT_SHIFT Z         &kp X         &kp C        &kp D          &kp V   &kp K         &kp H     &kp COMMA  &gqt RIGHT_SHIFT PERIOD
+  &kp LEFT_CONTROL  &kp LEFT_WIN         &none    &kp SPACE  &kp BACKSPACE   &none  &kp LEFT_ALT      &kp FSLH
             >;
         };
 
