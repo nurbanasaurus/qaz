@@ -151,10 +151,10 @@
 
         HMM {
             bindings = <
- &kp EXCL                &kp AT               &kp HASH        &kp DOLLAR        &kp PERCENT       &kp CARET   &kp AMPERSAND         &kp STAR        &grvtilde  &kp DELETE
-    &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW   &apoquote
-   &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE            &trans             &trans        &kp HOME         &kp END            &none           &trans
-   &trans                &trans                  &none             &to 0              &none           &none          &trans           &trans
+ &kp EXCL                &kp AT               &kp HASH        &kp DOLLAR        &kp PERCENT       &kp CARET   &kp AMPERSAND      &kp STAR        &grvtilde  &kp DELETE
+    &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &apoquote
+   &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE            &trans             &trans        &kp HOME         &kp END         &none           &trans
+   &trans                &trans                  &none             &to 0              &none           &none          &trans        &trans
             >;
         };
 
