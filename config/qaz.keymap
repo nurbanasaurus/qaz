@@ -27,18 +27,6 @@
             bindings = <&gresc>;
             layers = <0>;
         };
-
-        combo_backspace {
-            timeout-ms = <50>;
-            key-positions = <8 9>;
-            bindings = <&kp BACKSPACE>;
-            layers = <0>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
     };
 };
 
@@ -141,16 +129,16 @@
 
         BASE {
             bindings = <
-      &kp Q         &kp W         &kp F        &kp P   &kp B   &kp J        &kp L         &kp U        &kp Y  &clnsemi
-      &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G   &kp M  &gqt RALT N  &gqt RCTRL E  &gqt RGUI I     &kp O
-      &kp X         &kp C         &kp D        &kp V   &kp Z   &kp K        &kp H     &kp COMMA   &kp PERIOD
- &kp DELETE  &kp LEFT_WIN       &kp TAB    &kp SPACE   &sl 1   &none        &none      &kp FSLH
+      &kp Q         &kp W         &kp F        &kp P   &kp B          &kp J        &kp L         &kp U        &kp Y  &clnsemi
+      &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G          &kp M  &gqt RALT N  &gqt RCTRL E  &gqt RGUI I     &kp O
+      &kp X         &kp C         &kp D        &kp V   &kp Z          &kp K        &kp H     &kp COMMA   &kp PERIOD
+ &kp DELETE  &kp LEFT_WIN       &kp TAB    &kp SPACE   &sl 1  &kp BACKSPACE   &caps_word      &kp FSLH
             >;
         };
 
         THINGS {
             bindings = <
-  &none   &none   &none        &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
+ &close   &none   &none        &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
   &sl 3   &none   &none        &sl 2       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
   &none  &trans  &trans       &trans        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
   &none  &trans   &none  &skq LSHIFT           &sl 2      &none   &none   &none
