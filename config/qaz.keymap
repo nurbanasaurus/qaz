@@ -165,10 +165,10 @@
 
         GAME {
             bindings = <
-          &kp ESC         &kp Q         &kp W      &kp E   &kp R   &kp T     &kp     &kp     &kp     &kp
-          &kp TAB         &kp A         &kp S      &kp D   &kp F   &kp G     &kp     &kp     &kp     &kp
-   &kp LEFT_SHIFT         &kp Z         &kp X      &kp C   &kp V   &kp B     &kp     &kp     &kp
- &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE   &to 0     &kp     &kp  &trans
+          &kp ESC         &kp Q         &kp W      &kp E   &kp R   &kp T   &none   &none   &none   &none
+          &kp TAB         &kp A         &kp S      &kp D   &kp F   &kp G   &none   &none   &none   &none
+   &kp LEFT_SHIFT         &kp Z         &kp X      &kp C   &kp V   &kp B   &none   &none   &none
+ &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE   &to 0   &none   &none  &trans
             >;
         };
     };
