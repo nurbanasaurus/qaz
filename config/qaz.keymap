@@ -129,19 +129,19 @@
 
         BASE {
             bindings = <
-      &kp Q         &kp W         &kp F        &kp P   &kp B          &kp J        &kp L         &kp U        &kp Y  &clnsemi
-      &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G          &kp M  &gqt RALT N  &gqt RCTRL E  &gqt RGUI I     &kp O
-      &kp X         &kp C         &kp D        &kp V   &kp Z          &kp K        &kp H     &kp COMMA   &kp PERIOD
- &kp DELETE  &kp LEFT_WIN       &kp TAB    &kp SPACE   &sl 1  &kp BACKSPACE   &caps_word      &kp FSLH
+             &kp Q         &kp W         &kp F        &kp P   &kp B          &kp J        &kp L         &kp U                    &kp Y  &clnsemi
+             &kp A   &gqt LGUI R  &gqt LCTRL S  &gqt LALT T   &kp G          &kp M  &gqt RALT N  &gqt RCTRL E              &gqt RGUI I     &kp O
+ &gqt LEFT_SHIFT X         &kp C         &kp D        &kp V   &kp Z          &kp K        &kp H     &kp COMMA  &gqt RIGHT_SHIFT PERIOD
+        &kp DELETE  &kp LEFT_WIN       &kp TAB    &kp SPACE   &sl 1  &kp BACKSPACE   &caps_word      &kp FSLH
             >;
         };
 
         THINGS {
             bindings = <
- &close   &none   &none        &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
-  &sl 3   &none   &none        &sl 2       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
-  &none  &trans  &trans       &trans        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
-  &none  &trans   &none  &skq LSHIFT           &sl 2      &none   &none  &tog 4
+ &close   &none   &none   &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
+  &none   &none   &none   &none       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
+ &trans  &trans  &trans  &trans        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
+  &none  &trans   &none   &sl 2          &trans      &none   &sl 3  &tog 4
             >;
         };
 
@@ -150,7 +150,7 @@
  &kp EXCL                &kp AT               &kp HASH        &kp DOLLAR        &kp PERCENT       &kp CARET   &kp AMPERSAND      &kp STAR        &grvtilde  &kp DELETE
     &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &apoquote
    &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE            &trans             &trans        &kp HOME         &kp END         &none           &trans
-   &trans                &trans                  &none             &to 0              &none           &none          &trans        &trans
+   &trans                &trans                  &none            &trans              &none           &none          &trans        &trans
             >;
         };
 
