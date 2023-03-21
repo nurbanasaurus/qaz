@@ -138,10 +138,10 @@
 
         NUM {
             bindings = <
-        &none   &none   &none   &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
-&kp BACKSPACE  &trans  &trans  &trans       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
-       &trans  &trans  &trans  &trans        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
-      &kp ESC  &trans   &none   &to 4          &trans      &none   &none   &sl 3
+        &none  &none  &none  &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
+&kp BACKSPACE  &none  &none  &none       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
+        &none  &none  &none  &none        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
+      &kp ESC  &none  &none  &mo 3          &trans      &none   &none   &none
             >;
         };
 
@@ -149,26 +149,17 @@
             bindings = <
 &kp EXCL                &kp AT               &kp HASH        &kp DOLLAR        &kp PERCENT       &kp CARET   &kp AMPERSAND      &kp STAR        &grvtilde  &kp DELETE
    &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &apoquote
-  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE            &trans             &trans        &kp HOME         &kp END         &none           &trans
-  &trans                &trans                  &none            &trans              &none           &none          &trans        &trans
+   &none        &kp LEFT_BRACE        &kp RIGHT_BRACE             &none              &none        &kp HOME         &kp END         &none            &none
+   &none                 &none                  &none            &trans              &mo 3           &none           &none         &none
             >;
         };
 
         AH {
             bindings = <
- &none  &trans  &trans           &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR
-&trans  &trans  &trans  &kp PRINTSCREEN  &trans  &trans  &trans        &trans    &bt BT_PRV  &bt BT_NXT
-&trans  &trans  &trans           &trans  &trans  &trans  &trans        &trans         &none
-&trans  &trans  &trans           &trans  &trans  &trans  &trans   &bootloader
-            >;
-        };
-
-        FPS {
-            bindings = <
-         &kp ESC         &kp Q         &kp W      &kp E      &kp R  &kp T  &none  &none  &none  &none
-         &kp TAB         &kp A         &kp S      &kp D      &kp F  &kp G  &none  &none  &none  &none
-  &kp LEFT_SHIFT         &kp Z         &kp X      &kp C      &kp V  &kp B  &none  &none  &none
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &kp SPACE  &none  &none  &to 0
+&none  &none  &none            &none   &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR
+&none  &none  &none  &kp PRINTSCREEN   &none  &none  &none         &none    &bt BT_PRV  &bt BT_NXT
+&none  &none  &none            &none   &none  &none  &none         &none         &none
+&none  &none  &none           &trans  &trans  &none  &none   &bootloader
             >;
         };
     };
