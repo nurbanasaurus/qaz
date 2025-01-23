@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
 #define THINGS 1
@@ -40,10 +40,9 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <0>;
             global-quick-tap;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
+
         ht_bl: balanced-hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "BALANCED-HOLD-TAP";
@@ -51,10 +50,9 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <0>;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
+
         osm: one_shot_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "ONE_SHOT_MODS";
@@ -62,9 +60,7 @@
             tapping-term-ms = <300>;// <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings =
-                <&sk>,
-                <&kp>;
+            bindings = <&sk>, <&kp>;
         };
 
         // TAP DANCES
@@ -74,46 +70,41 @@
             label = "TAP_DANCE_BACKSLASH_PIPE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings =
-                <&kp BSLH>,
-                <&kp PIPE>;
+            bindings = <&kp BSLH>, <&kp PIPE>;
         };
+
         grvtilde: tap_dance_grave_tilde {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_GRAVE_TILDE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings =
-                <&kp GRAVE>,
-                <&kp TILDE>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
         };
+
         apoquote: tap_dance_apostrophe_quote {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_APOSTROPE_QUOTE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings =
-                <&kp SQT>,
-                <&kp DQT>;
+            bindings = <&kp SQT>, <&kp DQT>;
         };
+
         close: tap_dance_close {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_CLOSE";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings =
-                <&kp LC(F4)>,
-                <&kp LA(F4)>;
+            bindings = <&kp LC(F4)>, <&kp LA(F4)>;
         };
+
         clnsemi: tap_dance_close {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COLON_SEMICOLON";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings =
-                <&kp COLON>,
-                <&kp SEMICOLON>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
         };
+
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_KEY_QUICK_RELEASE";
@@ -129,37 +120,37 @@
 
         BASE {
             bindings = <
-            &kp Q         &kp W               &kp F        &kp P  &kp B           &kp J        &kp L         &kp U                    &kp Y  &clnsemi
-            &kp A   &gqt LGUI R        &gqt LCTRL S  &gqt LALT T  &kp G           &kp M  &gqt RALT N  &gqt RCTRL E              &gqt RGUI I     &kp O
-&gqt LEFT_SHIFT X         &kp C               &kp D        &kp V  &kp Z           &kp K        &kp H     &kp COMMA  &gqt RIGHT_SHIFT PERIOD
-       &kp DELETE  &kp LEFT_WIN  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &sl 1  &mt RSHFT BSLH   &caps_word      &kp FSLH
+&kp Q              &kp W         &kp F               &kp P        &kp B  &kp J           &kp L        &kp U         &kp Y                    &clnsemi
+&gqt LEFT_SHIFT A  &gqt LGUI R   &gqt LCTRL S        &gqt LALT T  &kp G  &kp M           &gqt RALT N  &gqt RCTRL E  &gqt RGUI I              &kp O
+&kp X              &kp C         &kp D               &kp V        &kp Z  &kp K           &kp H        &kp COMMA     &gqt RIGHT_SHIFT PERIOD
+&kp DELETE         &kp LEFT_WIN  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &sl 1  &mt RSHFT BSLH  &caps_word   &kp FSLH
             >;
         };
 
         NUM {
             bindings = <
-        &none  &none  &none  &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
-&kp BACKSPACE  &none  &none  &none       &kp EQUAL   &kp PLUS  &kp N4  &kp N5  &kp N6       &kp ENTER
-        &none  &none  &none  &none        &sk LGUI     &kp N0  &kp N1  &kp N2  &kp N3
-      &kp ESC  &none  &none  &mo 3          &trans      &none   &none   &none
+&none          &none  &none  &none  &kp UNDERSCORE  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp KP_NUMLOCK
+&kp BACKSPACE  &none  &none  &none  &kp EQUAL       &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
+&none          &none  &none  &none  &sk LGUI        &kp N0     &kp N1  &kp N2  &kp N3
+&kp ESC        &none  &none  &mo 3  &trans          &none      &none   &none
             >;
         };
 
         HMM {
             bindings = <
-&kp EXCL                &kp AT               &kp HASH        &kp DOLLAR        &kp PERCENT       &kp CARET   &kp AMPERSAND      &kp STAR        &grvtilde  &kp DELETE
-   &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &apoquote
-   &none        &kp LEFT_BRACE        &kp RIGHT_BRACE             &none              &none        &kp HOME         &kp END         &none            &none
-   &none                 &none                  &none            &trans              &mo 3           &none           &none         &none
+&kp EXCL  &kp AT                &kp HASH               &kp DOLLAR        &kp PERCENT        &kp CARET       &kp AMPERSAND   &kp STAR      &grvtilde        &kp DELETE
+&none     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &apoquote
+&none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &none              &kp HOME        &kp END         &none         &none
+&none     &none                 &none                  &trans            &mo 3              &none           &none           &none
             >;
         };
 
         AH {
             bindings = <
-&none  &none  &none            &none   &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR
-&none  &none  &none  &kp PRINTSCREEN   &none  &none  &none         &none    &bt BT_PRV  &bt BT_NXT
-&none  &none  &none            &none   &none  &none  &none         &none         &none
-&none  &none  &none           &trans  &trans  &none  &none   &bootloader
+&none  &none  &none  &none            &none   &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR
+&none  &none  &none  &kp PRINTSCREEN  &none   &none  &none  &none         &bt BT_PRV    &bt BT_NXT
+&none  &none  &none  &none            &none   &none  &none  &none         &none
+&none  &none  &none  &trans           &trans  &none  &none  &bootloader
             >;
         };
     };
