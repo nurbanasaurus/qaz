@@ -41,6 +41,8 @@
             quick-tap-ms = <0>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <10 11 12 13 19 18 17 16>;
         };
 
         ht_bl: balanced-hold-tap {
@@ -112,10 +114,10 @@
 
         BASE {
             bindings = <
-&kp Q              &kp W         &kp F               &kp P        &kp B  &kp J           &kp L        &kp U         &kp Y                    &clnsemi
-&gqt LEFT_SHIFT A  &gqt LGUI R   &gqt LCTRL S        &gqt LALT T  &kp G  &kp M           &gqt RALT N  &gqt RCTRL E  &gqt RGUI I              &kp O
-&kp X              &kp C         &kp D               &kp V        &kp Z  &kp K           &kp H        &kp COMMA     &gqt RIGHT_SHIFT PERIOD
-&kp DELETE         &kp LEFT_WIN  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &sl 1  &mt RSHFT BSLH  &caps_word   &kp FSLH
+&kp Q       &kp W         &kp F               &kp P        &kp B  &kp J           &kp L        &kp U         &kp Y                    &clnsemi
+&kp A       &gqt LGUI R   &gqt LCTRL S        &gqt LALT T  &kp G  &kp M           &gqt RALT N  &gqt RCTRL E  &gqt RGUI I              &kp O
+&kp X       &kp C         &kp D               &kp V        &kp Z  &kp K           &kp H        &kp COMMA     &gqt RIGHT_SHIFT PERIOD
+&kp DELETE  &kp LEFT_WIN  &mt LEFT_SHIFT TAB  &lt 2 SPACE  &sl 1  &mt RSHFT BSLH  &caps_word   &kp FSLH
             >;
         };
 
