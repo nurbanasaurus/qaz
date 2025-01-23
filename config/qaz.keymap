@@ -89,14 +89,6 @@
             bindings = <&kp SQT>, <&kp DQT>;
         };
 
-        close: tap_dance_close {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_CLOSE";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp LC(F4)>, <&kp LA(F4)>;
-        };
-
         clnsemi: tap_dance_close {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COLON_SEMICOLON";
